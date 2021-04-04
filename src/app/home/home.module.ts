@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { FileSizePipe } from '../file-size.pipe';
 
 @NgModule({
   imports: [
@@ -14,6 +15,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    FileSizePipe
+  ]
 })
+
 export class HomePageModule {}
